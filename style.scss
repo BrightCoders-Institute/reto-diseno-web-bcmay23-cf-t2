@@ -71,8 +71,8 @@ body {
 		}
 	}
 	.container-card{	
-	width: 100%;
-	margin-top:3rem;	
+		width: 100%;
+		margin-top:3rem;	
 	}
 	.card{
 		width: 80%;
@@ -89,18 +89,18 @@ body {
 		}	
 	}
 	.text{
-
 		font-family: Poppins;
 		font-size:0.9rem ;
-		font-weight: 600;
+		font-weight: 200;
 		color: rgb(167, 165, 165);
 		padding: 0rem 2rem 2rem 2rem;
 	}
+
 	.div-btn {
 		z-index: 10;
 		background-color: white;
 		width: 90%;
-		box-shadow: 0px 0px 20px 0px rgb(206, 203, 206);
+		box-shadow: 0px 0px 20px 0px rgba(black, 0.2);
 		border-radius: 1rem;
 		margin:0px auto ;
 		padding-bottom: 2rem;
@@ -113,15 +113,66 @@ body {
 			
 	}
 	.container-footer{
-		background-color: black;
+		background-color: hsl(192, 100%, 9%);
 		color: white;
 		position: relative;
 		margin-top: -5rem;
 		padding-top: 7rem;
 		z-index: 5;
-	}
-	.logoedit{
-		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-inline: 2rem;
+
+		.logoedit{
+			filter: saturate(0%) brightness(1000%) contrast(100%);
+			color: white;
+			width: 50%;
+		}
+
+		.footer-text {
+			display: flex;
+			align-items: flex-start;
+			text-align: left;
+
+			img {
+				padding-right: 2rem;
+			}
+		}
+
+		h4 {
+			margin-top: -4px;
+			font-weight: 200;
+		}
+
+		.footer-bottom {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 1rem;
+
+			.contact-images {
+				display: flex;
+				flex-direction: row;
+				width: 128px;
+				column-gap: 4px;
+
+				img {
+					width: 100%;
+					filter: invert(100%);
+				}
+			}
+
+			.copyright {
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+				padding-top: 1rem;
+			}
+		}
+
 	}
 	
 }
